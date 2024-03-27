@@ -12,6 +12,18 @@ We **Note** that the testing image must satisfy that the values in the boundary 
 
 The checkpoint and the testing data in the paper can be found in [Google Drive](https://drive.google.com/file/d/1r_lLVGMdIFUzOLwad5YR1gt-1nYT2fFT/view?usp=sharing).
 
-Before testing, one should use the Matlab code of ESPIRiT to estimate the sense map. 
+Before testing, one should use the Matlab code of ESPIRiT to estimate the sense map. Or you can use the open source library in Python tools to estimate the sense map.
+```python
+import sigpy.mri as mr
+mps = mr.app.EspiritCalib(
+                    torch.view_as_complex(data_kspace).cpu().numpy(),
+                    calib_width=12,
+                    thresh=0.04,
+                    kernel_width=4,
+                    crop=0.97,
+                    max_iter=100
+                ).run()
+sense_map_tensor = torch.view_as_real(torch.from_numpy(mps)).to(data_kspace.device)
+```
 
 We note that the sense map in our provided testing data is computing on the full-sampled data, with `ncalib=16`. One could also use the under-sampled data. If the number of its center lines is larger than 16, the estimated sense map is equivalent to using the full-sampled data.
