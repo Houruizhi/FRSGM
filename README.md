@@ -5,7 +5,7 @@ The training codes are in my previous projects [IDPCNN](https://github.com/Houru
 
 To get the testing result, you can directly run the demo file.
 
-We **Note** that the testing image must satisfy that the values in the boundary position are zero. The examples of the testing image are in the following.
+We **Note** that the testing image must satisfy that the values in the boundary position are zero. Otherwise, the results will be unsatisfying. The examples of the testing image are in the following.
 
 ![图片1](https://github.com/Houruizhi/FRSGM/assets/43208624/ff86c8c1-22b9-418a-a912-58e966eee76d)
 
