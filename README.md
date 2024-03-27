@@ -25,5 +25,3 @@ mps = mr.app.EspiritCalib(
                 ).run()
 sense_map_tensor = torch.view_as_real(torch.from_numpy(mps)).to(data_kspace.device)
 ```
-
-We note that the sense map in our provided testing data is computing on the full-sampled data, with `ncalib=16`. One could also use the under-sampled data. If the number of its center lines is larger than 16, the estimated sense map is equivalent to using the full-sampled data.
