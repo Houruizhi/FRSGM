@@ -25,3 +25,36 @@ mps = mr.app.EspiritCalib(
                 ).run()
 sense_map_tensor = torch.view_as_real(torch.from_numpy(mps)).to(data_kspace.device)
 ```
+
+If the code is helpful, please cite the following papers:
+```
+@article{HOU2022113973,
+title = {IDPCNN: Iterative denoising and projecting CNN for MRI reconstruction},
+journal = {Journal of Computational and Applied Mathematics},
+volume = {406},
+pages = {113973},
+year = {2022},
+author = {Ruizhi Hou and Fang Li},
+}
+
+@ARTICLE{TRPA,
+  author={Hou, Ruizhi and Li, Fang and Zhang, Guixu},
+  journal={IEEE Transactions on Computational Imaging}, 
+  title={Truncated Residual Based Plug-and-Play ADMM Algorithm for MRI Reconstruction}, 
+  year={2022},
+  volume={8},
+  number={},
+  pages={96-108}
+}
+
+
+@ARTICLE{FRSGM,
+  author={Hou, Ruizhi and Li, Fang and Zeng, Tieyong},
+  journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+  title={Fast and Reliable Score-Based Generative Model for Parallel MRI}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-14}
+}
+```
