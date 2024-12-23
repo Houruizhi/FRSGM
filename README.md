@@ -10,7 +10,7 @@ We **Note** that the testing image must satisfy that the values in the boundary 
 ![图片1](https://github.com/Houruizhi/FRSGM/assets/43208624/ff86c8c1-22b9-418a-a912-58e966eee76d)
 
 
-The checkpoint and the testing data in the paper can be found in [Google Drive](https://drive.google.com/file/d/1ThVsaKe2SfY0z_RNxPfPy3q8sOeGSglW/view?usp=sharing).
+The checkpoint and the testing data in the paper can be found in [Chps](https://drive.google.com/file/d/1ThVsaKe2SfY0z_RNxPfPy3q8sOeGSglW/view?usp=sharing) and [Data](https://drive.google.com/file/d/1TZ3suvpicCCSET8m_QE_T4DggsGp5sQ4/view?usp=drive_link).
 
 Before testing, one should use the Matlab code of ESPIRiT to estimate the sense map. Or you can use the open source library in Python tools to estimate the sense map.
 ```python
