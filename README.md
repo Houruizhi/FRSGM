@@ -52,9 +52,9 @@ author = {Ruizhi Hou and Fang Li},
   author={Hou, Ruizhi and Li, Fang and Zeng, Tieyong},
   journal={IEEE Transactions on Neural Networks and Learning Systems}, 
   title={Fast and Reliable Score-Based Generative Model for Parallel MRI}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-14}
-}
+  year={2025},
+  volume={36},
+  number={1},
+  pages={953-966},
+  doi={10.1109/TNNLS.2023.3333538}}
 ```
